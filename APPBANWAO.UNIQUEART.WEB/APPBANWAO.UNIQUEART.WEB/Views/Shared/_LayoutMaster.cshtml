@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.superhero.min.css" rel="stylesheet" />
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-2">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand LogoTextColor" href="#"><i class="fa fa-2x fa-sun-o"></i> <h4> Unique Art Cutlery</h4></a>
+                        </div>
+                            </div>
+                        <div class="col-md-10 col-xs-10">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav  ">
+                                            <li ><a href="#" class="TopMenuColor">Helpline: <i class="fa fa-phone"></i> +91-8860795399 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#" class="TopMenuColor">Follow us:</a> </li>
+                                            <li><a href="#" title="facebook" class="TopMenuColor"><i class="fa fa-2x fa-facebook-square"></i> </a></li>
+                                            <li><a href="#" title="twitter" class="TopMenuColor"><i class="fa fa-2x fa-twitter-square"></i> </a></li>
+                                            <li><a href="#" title="LinkedIn" class="TopMenuColor"><i class="fa fa-2x fa-linkedin-square"></i> </a></li>
+                                            <li><a href="#" title="Instagram" class="TopMenuColor"><i class="fa fa-2x fa-instagram"></i> </a></li>
+                                            <li></li>
+                                            <li><a href="#" class="TopMenuColor"> About us </a></li>
+                                        </ul>
+
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="#" class="TopMenuColor"> <i class="fa fa-envelope"></i> abhi.recoil2051@gmail.com</a> </li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                            <form class="navbar-form navbar-left" role="search">
+                                                <div class="form-group">
+                                                    <input class="form-control" style="width:400px" placeholder="Search Cutlery, interior items" type="text">
+                                                </div>
+                                                <button type="submit" class="btn btn-info"><i class="fa fa-search"></i></button>
+                                            </form>
+                                        </div>
+                                       </div>
+                                         <div class="col-md-6">
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        @RenderBody()
+    </div>
+</body>
+</html>
