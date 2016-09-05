@@ -11,5 +11,26 @@ color:#fffa0f !important;
 .TopMenuColor:hover {
 
 color:#fff !important;
+}
 
+.graphicalMenu {
+padding-left:3%
+}
+.graphicalMenuimg {
+    width:100px !important
+}
+.graphicalMenuColor {
+color:#ffd223;
+font-size:14px
+}
+
+.graphicalMenuColor:hover {
+
+color:#fff !important;
+}
+.mainContainer {
+width:100% !important;
+}
+.removeSliderIconBackground {
+background: none !important;
 }

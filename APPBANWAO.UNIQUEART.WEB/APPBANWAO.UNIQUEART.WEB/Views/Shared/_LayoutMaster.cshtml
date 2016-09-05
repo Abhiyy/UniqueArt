@@ -12,7 +12,7 @@
     <script src="~/Scripts/angular.min.js"></script>
 </head>
 <body>
-    <div>
+    <div class="mainContainer">
         <header>
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -63,7 +63,22 @@
                                        </div>
                                          <div class="col-md-6">
                                             <ul class="nav navbar-nav navbar-right">
-                                                <li></li>
+                                                <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                                <li><a href="#"><i class="fa fa-shopping-bag"></i> My Cart</a></li>
+                                                <li><a href="#"><i class="fa fa-cart-arrow-down"></i> Checkout</a></li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user"></i> Hi, User<span class="caret"></span></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                                                        <li><a href="#"><i class="fa fa-shopping-bag"></i> My Cart</a></li>
+                                                        <li><a href="#"><i class="fa fa-cart-arrow-down"></i> Checkout</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#"><i class="fa fa-user"></i> My Profile</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                                    </ul>
+                                                </li>
+                                               
                                             </ul>
                                         </div>
                                        
@@ -74,7 +89,29 @@
                 </div>
             </nav>
         </header>
-        @RenderBody()
+        
+        <div class="row text-center graphicalMenu">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/cutlery.jpg" class="img-circle graphicalMenuimg" /><br /><span>Cutlery</span> </a></li>
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/serveware.jpg" class="img-circle graphicalMenuimg" /><br /><span>Serveware</span> </a></li>
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/tableace.jpg" class="img-circle graphicalMenuimg" /><br /><span>Table Accessories</span> </a></li>
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/Dining.jpg" class="img-circle graphicalMenuimg" /><br /><span>Dining Accessories</span> </a></li>
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/Furniture.jpg" class="img-circle graphicalMenuimg" /><br /><span>Furniture</span> </a></li>
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/HomeDecor.jpg" class="img-circle graphicalMenuimg" /><br /><span>Home Decor</span> </a></li>
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/barace.jpg" class="img-circle graphicalMenuimg" /><br /><span>Bar Accessories</span> </a> </li>
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/interior.jpg" class="img-circle graphicalMenuimg" /><br /><span>Interior Accessories</span> </a> </li>
+                        <li><a href="#" class="graphicalMenuColor"><img src="~/Images/Menu/gifts.jpg" class="img-circle graphicalMenuimg" /><br /><span>Gifts</span> </a> </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>
