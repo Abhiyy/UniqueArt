@@ -27,6 +27,17 @@
     <div class="col-md-12">
         <hr />
         <h1 class="text-center">RECOMMENDED PRODUCTS</h1>
-        @Html.Partial("_PartialStoreOffers")
+        @Html.Partial("_PartialRecommendedProducts")
     </div>
+
+    <div class="col-md-12">
+        <hr />
+        <div class="col-md-8">
+            @Html.Partial("_PartialOfflineProducts")
+        </div>
+        <div class="col-md-4 leftBorder">
+            @Html.Partial("_PartialCustomizationRequestForm")
+        </div>
+    </div>
+
 </div>
