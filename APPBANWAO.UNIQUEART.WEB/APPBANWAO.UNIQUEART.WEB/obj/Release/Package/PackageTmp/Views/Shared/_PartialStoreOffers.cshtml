@@ -1,0 +1,58 @@
+﻿<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".imghalfScreen").click(function (e) {
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".imghalfScreen").mouseenter(function () {
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+<div class="effects clearfix" id="effect-6">
+    <div class="imghalfScreen img-responsive">
+
+        <img src="~/Images/Other/gifts.jpg" />
+        <span>Gifts for every ocassion</span>
+        <div class="overlay">
+
+            <a class="expand" href="#"><i class="fa fa-search"></i></a>
+           
+            <a class="close-overlay hidden">x</a>
+        </div>
+    </div>
+    <div class="imghalfScreen img-responsive">
+
+        <img src="~/Images/Other/store.jpg" />
+        <span>
+            Visit our store for attractive discounts
+        </span>
+        <div class="overlay">
+
+            <a class="expand" href="#"><i class="fa fa-search"></i></a>
+           
+                <a class="close-overlay hidden">x</a>
+</div>
+    </div>
+
+</div>

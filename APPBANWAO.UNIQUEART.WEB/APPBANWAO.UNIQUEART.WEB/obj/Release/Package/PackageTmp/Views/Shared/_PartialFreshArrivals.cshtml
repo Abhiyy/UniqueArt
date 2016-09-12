@@ -1,0 +1,77 @@
+﻿<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+
+<div class="effects clearfix" id="effect-6">
+    <div class="img img-responsive">
+
+        <img src="~/Images/Products/barstools.jpg" />
+        <div class="overlay">
+
+            <a class="expand" href="#"><i class="fa fa-search"></i></a>
+            <h3 class="text-center">Bar Stool</h3>
+            <a class="close-overlay hidden">x</a>
+        </div>
+    </div>
+    <div class="img img-responsive">
+
+        <img src="~/Images/Products/wineglass.jpg" />
+        <div class="overlay">
+
+            <a class="expand" href="#"><i class="fa fa-search"></i></a>
+            <h3 class="text-center">Wine glass set</h3>
+            <a class="close-overlay hidden">x</a>
+        </div>
+    </div>
+    <div class="img img-responsive">
+
+        <img src="~/Images/Products/cutlery.jpg" />
+        <div class="overlay">
+
+            <a class="expand" href="#"><i class="fa fa-search"></i></a>
+            <h3 class="text-center">Cutlery set</h3>
+            <a class="close-overlay hidden">x</a>
+        </div>
+    </div>
+    <div class="img img-responsive">
+
+        <img src="~/Images/Products/interior.jpg" />
+        <div class="overlay">
+
+            <a class="expand" href="#"><i class="fa fa-search"></i></a>
+            <h3 class="text-center">Interior Accessories set</h3>
+            <a class="close-overlay hidden">x</a>
+        </div>
+    </div>
+</div>
+<div class="moreProducts">
+    <a href="#" class="btn btn-primary text-right">More Products <i class="fa fa-angle-double-right"></i></a>
+</div>

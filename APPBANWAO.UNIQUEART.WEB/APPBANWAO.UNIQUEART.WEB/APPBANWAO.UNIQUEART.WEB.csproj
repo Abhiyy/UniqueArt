@@ -143,16 +143,36 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Images\Menu\-Furniture.jpg" />
+    <Content Include="Images\Menu\-Homedecor.jpg" />
     <Content Include="Images\Menu\barace.jpg" />
     <Content Include="Images\Menu\cutlery.jpg" />
     <Content Include="Images\Menu\Dining.jpg" />
     <Content Include="Images\Menu\Furniture.jpg" />
     <Content Include="Images\Menu\gifts.jpg" />
-    <Content Include="Images\Menu\Homedecor.jpg" />
+    <Content Include="Images\Menu\Homedecor.png" />
     <Content Include="Images\Menu\index.jpg" />
     <Content Include="Images\Menu\interior.jpg" />
     <Content Include="Images\Menu\serveware.jpg" />
     <Content Include="Images\Menu\tableace.jpg" />
+    <Content Include="Images\Other\--store.jpg" />
+    <Content Include="Images\Other\customized.jpg" />
+    <Content Include="Images\Other\gifts.jpg" />
+    <Content Include="Images\Other\map.gif" />
+    <Content Include="Images\Other\store.JPG" />
+    <Content Include="Images\Products\-cutlery.jpg" />
+    <Content Include="Images\Products\-serverware3.jpg" />
+    <Content Include="Images\Products\-serveware.jpg" />
+    <Content Include="Images\Products\-serveware1.jpg" />
+    <Content Include="Images\Products\-serveware2.jpg" />
+    <Content Include="Images\Products\barstools.jpg" />
+    <Content Include="Images\Products\cutlery.JPG" />
+    <Content Include="Images\Products\interior.jpg" />
+    <Content Include="Images\Products\serveware.JPG" />
+    <Content Include="Images\Products\serveware1.JPG" />
+    <Content Include="Images\Products\serveware2.JPG" />
+    <Content Include="Images\Products\serveware3.JPG" />
+    <Content Include="Images\Products\wineglass.jpg" />
     <Content Include="Images\Slider\bar.jpg" />
     <Content Include="Images\Slider\cutlery.jpg" />
     <Content Include="Images\Slider\dining.jpg" />
@@ -202,6 +222,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\ua.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -951,6 +972,7 @@
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -965,6 +987,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_PartialCategoriesMenu.cshtml" />
     <Content Include="Views\Shared\_PartialSlider.cshtml" />
+    <Content Include="Views\Shared\_PartialCustomizationRequestForm.cshtml" />
+    <Content Include="Views\Shared\_PartialFreshArrivals.cshtml" />
+    <Content Include="Views\Shared\_PartialOfflineProducts.cshtml" />
+    <Content Include="Views\Shared\_PartialRecommendedProducts.cshtml" />
+    <Content Include="Views\Shared\_PartialStoreOffers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
